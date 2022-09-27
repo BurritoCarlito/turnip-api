@@ -7,7 +7,7 @@ import Navigation from './components/Navigation';
 
 
 
-const App = () => {
+export default function App() {
   return (
     <div className="App">
       <Button />
@@ -15,6 +15,6 @@ const App = () => {
       <Calories />
     </div>
   );
-};
+}
 
-export default App;
+
