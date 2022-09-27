@@ -9,11 +9,15 @@ import Navigation from './components/Navigation';
 
 export default function App() {
   return (
-    <div className="App">
-      <Button />
-      <Navigation />
-      <Calories />
-    </div>
+    <main className="layout">
+      <section className='sidebar'>
+        <nav className='sidebar_menu'>
+        <Button />
+        <Navigation />
+        <Calories />
+        </nav>
+      </section>
+    </main>
   );
 }
 
