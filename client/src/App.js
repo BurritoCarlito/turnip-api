@@ -14,9 +14,11 @@ export default function App() {
         <nav className='sidebar_menu'>
         <Button />
         <Navigation />
-        <Calories />
         </nav>
       </section>
+      <span>
+      <Calories />
+      </span>
     </main>
   );
 }
