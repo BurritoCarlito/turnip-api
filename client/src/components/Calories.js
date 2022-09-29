@@ -1,8 +1,11 @@
 import React from 'react';
+import "./Calories.scss";
 
 function Calories(){
   return (
-  <h1> I am the Calories component</h1>
+  <div className='calories'>
+    <h1> I am the Calories component</h1>
+  </div>
   );
 }
 
