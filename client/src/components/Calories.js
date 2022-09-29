@@ -90,6 +90,12 @@ function BmrCalculator(){
                       Calories/per day
                     </span>
                   </div>
+
+                  <div className='fat_loss'>
+                    <span className='calories'>
+                        {calories - 500} Calories / per day is recommended for weight loss 
+                    </span>
+                  </div>
               </section>
           </main>
   );
