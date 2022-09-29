@@ -1,0 +1,8 @@
+.recipie-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.recipie1, .recipie2, .recipie3 {
+  border: solid black;
+}
