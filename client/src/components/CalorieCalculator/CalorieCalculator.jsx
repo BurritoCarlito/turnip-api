@@ -1,16 +1,13 @@
 import { Layout } from 'antd';
 import React from 'react';
-import SideNavigation from './components/SideNavigation/SideNavigation';
 const { Header, Footer, Sider, Content } = Layout;
 
-const App = () => (
+const CalorieCalculator = () => (
   <>
     <Layout>
-      <Sider>
-        <SideNavigation />
-      </Sider>
+      <Sider>Sider</Sider>
       <Layout>
-        <Header >Turnip</Header>
+        <Header>Header</Header>
         <Content>Content</Content>
         <Footer>Footer</Footer>
       </Layout>
@@ -18,4 +15,4 @@ const App = () => (
   </>
 );
 
-export default App;
+export default CalorieCalculator;
