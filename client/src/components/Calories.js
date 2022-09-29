@@ -42,7 +42,6 @@ function BmrCalculator(){
                       <h2>BMR Calculator</h2>
                       <form>
                           <h3>Gender</h3>
-                          <div onChange={setGenderOn}>
                           <input
                               type="radio"
                               name="gender"
@@ -58,7 +57,6 @@ function BmrCalculator(){
                               value="female"
                           />
                           <label id="female">Female</label>
-                          </div>
                           <h3>Age</h3>
                           <input
                               className="bmr_calculator-input text--semi-bold"
