@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Fitness.scss";
 
 function Fitness(){
   return (

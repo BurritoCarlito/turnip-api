@@ -18,7 +18,7 @@ import * as AiIcons from "react-icons/ai";
 
 const navBarRoutes = [
   {
-    title: "Calorie BMI",
+    title: "Calorie BMR",
     path: "/calories",
     icon: < RiIcons.RiHealthBookFill />,
     styleName: "nav-text"
@@ -30,7 +30,7 @@ const navBarRoutes = [
     styleName: "nav-text"
   },
   {
-    title: "Fitness",
+    title: "Fitness Plan",
     path: "/fitness",
     icon: < MdIcons.MdFitnessCenter />,
     styleName: "nav-text"
@@ -52,11 +52,14 @@ function Navigation(){
   return (
     <>
       <IconContext.Provider value={{ color: "#FFF"}}>
-
         <div className="sidebar">
+        <div className="icon">
+          
+        </div>
           <Link to='#' className="menu-bar">
             < FaIcons.FaBars onClick={showSidebar} />
           </Link>
+        
           <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
             <ul className="nav-items" onClick={showSidebar}>
               <li className="nav-toggle">
