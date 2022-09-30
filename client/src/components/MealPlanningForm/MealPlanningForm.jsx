@@ -1,7 +1,7 @@
 import { Button, Form, Input, Radio } from 'antd';
 import React, { useState } from 'react';
 
-const App = () => {
+const MealPlanningForm = () => {
   const [form] = Form.useForm();
   const [formLayout, setFormLayout] = useState('horizontal');
 
@@ -70,4 +70,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default MealPlanningForm;
