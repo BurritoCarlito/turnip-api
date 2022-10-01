@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react'
 
 import Button from './components/Button';
-import Calories from './components/Calories';
+import BMR from './components/Calories';
 import Navigation from './components/Navigation';
 
 
@@ -17,7 +17,7 @@ export default function App() {
         </nav>
       </section>
       <span>
-      <Calories />
+      <BMR />
       </span>
     </main>
   );
