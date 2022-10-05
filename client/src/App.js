@@ -1,24 +1,26 @@
 import './App.css';
-import React from 'react'
-
-import Button from './components/Button';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import BMR from './components/Calories';
 import Navigation from './components/Navigation';
+import Mealplanner from './components/MealPlanner/MealPlanner';
+import Fitness from "./components/Fitness";
+import Contact from "./components/Contact";
 
 
 
 export default function App() {
   return (
-    <main className="layout">
-      <section className='sidebar'>
-        <nav className='sidebar_menu'>
-        <Button />
-        <Navigation />
-        </nav>
-      </section>
-      <span>
-      <BMR />
-      </span>
+    <main className="App">
+      <Router>
+        <Navigation/>
+        <Routes>
+          <Route path="/calories" element={<BMR/>}/>
+          <Route path="/mealplan" element={<Mealplanner/>}/>
+          <Route path="/fitness" element={<Fitness/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+        </Routes>
+      </Router>
     </main>
   );
 }
